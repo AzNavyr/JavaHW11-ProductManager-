@@ -6,7 +6,10 @@ import ru.netology.domain.Smartphone;
 import ru.netology.repository.ProductRepository;
 
 public class ProductManager {
-    private ProductRepository repo;
+    private ProductRepository repo = new ProductRepository();
+
+    public ProductManager() {
+    }
 
     public ProductManager(ProductRepository repo) {
         this.repo = repo;
